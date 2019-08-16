@@ -188,6 +188,9 @@ https://firebase.google.com/docs/web/setup#config-web-app -->
     var uid = (email).hashCode();
     writeUserData(uid, name, email);
     btn_subscribe.innerHTML = "Done";
+    setTimeout(function() {
+      btn_subscribe.innerHTML = "Subscribe";
+    }, 1500);
     e.preventDefault();
     e.stopPropagation();
   }
